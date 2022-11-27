@@ -7,10 +7,9 @@
      rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./images/logo2.png" type="">
-    <title>Объявления</title>
+    <title>Новое объявление</title>
 </head>
 <body>
-<div>
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -22,18 +21,39 @@
                     <a class="nav_link" href="#">Выход</a>
                 </nav>
             </div>
-            <div class="rectangle"></div>
+            <div>
+                <hr class="line">
+            </div>
         </div>
     </header>
-
-    <div class="loading">
-       
-    </div>
-
-    <div class="dop_links">
-        <a class="mail" href="#">info@gmail.com</a>
-        <a class="info_devop" href="#">Информация о разработчике</a>
-    </div>
-</div>
+        <div class="loading">
+                <div class="upload">
+                    <form id="upload-container" method="POST" action="">
+                            <img id="upload-image" src="./images/+2.svg">
+                            <div>
+                                <label for="file-input">Загрузите изображение</label>
+                            </div>
+                    </form>
+                </div>
+                <div class="about__product">
+                    <form>
+                        <input type="text" id="name" placeholder="Название">
+                        <input type="text" id="price2" placeholder="Цена">
+                        <input type="text" id="desc2" placeholder="Описание">
+                    </form>
+    
+                        <a class="btn2" href="">
+                            Опубликовать объявление
+                        </a>
+                        
+                    
+                </div>
+        </div>
+    <div class="container">
+        <div class="dop_links">
+            <a class="mail" href="#">info@gmail.com</a>
+            <a class="info_devop" href="#">Информация о разработчике</a>
+        </div>
+   </div>
 </body>
 </html>
