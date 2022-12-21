@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./reg.css">
+    <link rel="shortcut icon" href="./images/logo2.png" type="">
+    <title>Объявления</title>
+</head>
+
+<body>
+    <div id="gray">
+
+    </div>
+<div id="window">
+    <img class="close" src="./images/close.png">
+    <div class="form">
+        <h2>Регистрация</h2>
+        <br>
+        <form action="index.html" name="f1">
+            <input type="text" placeholder="Ваше имя" name="name1" class="input1">
+            <input type="email" placeholder="Email" name="email1" class="input">
+            <input type="tel" placeholder="Мобильный телефон" name="number1" class="input">
+            <input type="password" placeholder="Пароль" name="pass" class="input">
+            <input type="password" placeholder="Повторите пароль" name="pass2" class="input">
+            <label class="label">
+                <input type='checkbox'>
+                Согласен на обработку 
+                <span class="person">персональных данных</span>
+            </label>
+            <center> <a class="reg__btn" href="">
+                Зарегистрироваться
+            </a>
+            </center>
+        </form>
+    </div>
+</div>
+
+<script>
+    function show(state)
+    {
+        document.getElementById('window').style.display = state;
+        document.getElementById('gray').style.display = state;
+    }
+</script>
+</body>
+</html>

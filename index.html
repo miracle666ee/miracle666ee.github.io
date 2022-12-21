@@ -7,6 +7,7 @@
      rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./media.css">
+    <link rel="reg" href="./reg.html">
     <link rel="shortcut icon" href="./images/logo2.png" type="">
     <title>Объявления</title>
 </head>
@@ -19,8 +20,8 @@
                     <img src="./images/logo.svg">
                 </div>
                 <nav class="nav">
-                    <a class="nav_link" href="#">Регистрация</a>
-                    <a class="nav_link" href="#">Вход</a>
+                    <a  onclick="show('block')" class="nav_link" href="#">Регистрация</a>
+                    <a onclick="show2('block')" class="nav_link" href="#">Вход</a>
                 </nav>
             </div>
             <div>
@@ -149,5 +150,85 @@
             <a class="info_devop" href="#">Информация о разработчике</a>
     </div> 
 </div>
+
+
+<!--Форма регистрации-->
+
+<div onclick="show('none');show2('none')" id="gray">
+</div>
+<div id="window1">
+    <img onclick="show('none')" class="close" src="./images/close.png">
+    <div class="form" id="form1">
+        <div class="select">
+            <text class="reg_text">Регистрация</text>
+            <text onclick="show('none');show2('block')"  class="avt_text">Авторизация</text>
+       </div>
+        <br>
+        <form action="index.html" name="f1">
+            <input type="text" placeholder="Ваше имя" name="name1" class="input1" >
+            <div class="wrapper1">
+                <input type="email" placeholder="Email" name="email1" class="input">
+                <input type="tel" placeholder="Мобильный телефон" name="number1" class="input">
+                <input type="password" placeholder="Пароль" name="pass" class="input">
+                <input type="password" placeholder="Повторите пароль" name="pass2" class="input">
+            </div>
+            <label class="label">
+                <input type='checkbox'>
+                Согласен на обработку 
+                <span class="person">персональных данных</span>
+            </label>
+            <center> <a class="reg__btn" href="">
+                Зарегистрироваться
+            </a>
+            <br>
+            <img src="./images/info.svg">
+            </center>
+        </form>
+    </div>
+
+   
+</div>
+
+<div id="window2">
+    <img onclick="show2('none')" class="close" src="./images/close.png">
+    <div class="form2" id="form2">
+        <div class="select1">
+            <text onclick="show('block');show2('none')" class="reg_text1">Регистрация</text>
+            <text class="avt_text1">Авторизация</text>
+       </div>
+        <br>
+        <form action="index.html" name="f1">
+            <div class="wrapper2">
+                <input type="email" placeholder="Email" name="email1" class="input">
+            
+                <input type="password" placeholder="Пароль" name="pass" class="input">
+            </div>
+           
+            <center> <a class="av__btn" href="">
+                Войти
+            </a>
+
+            <img src="./images/info.svg">
+            </center>
+        </form>
+    </div>
+
+   
+</div>
+
+<script>
+function show(state)
+{
+    document.getElementById('window1').style.display = state;
+    document.getElementById('gray').style.display = state;
+}
+
+function show2(state)
+{
+    document.getElementById('window2').style.display = state;
+    document.getElementById('gray').style.display = state;
+}
+</script>
+
 </body>
 </html>
